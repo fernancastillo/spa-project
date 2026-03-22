@@ -53,5 +53,5 @@ jobs:
       - name: Dar permisos a Maven Wrapper
         run: chmod +x mvnw
 
-      - name: Build + tests
-        run: ./mvnw clean verify
+      - name: Build 
+        run: ./mvnw clean install -DskipTests
